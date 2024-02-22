@@ -1,0 +1,52 @@
+
+Irj programot alapok.py néven és abban old meg a következő feladatokat!
+ 
+1. Feladat
+A  program  a felhasználótól bekéri először a keresztnevét, majd a vezetéknevét. 
+A program ezután összefűzi ezeket egy teljes_nev nevű változóba. 
+Végül a program a teljes nevén üdvözli a felhasználót!
+
+Minta: 
+
+Kérem a keresztneved: Béla
+Kérem a vezeték neved: Kis
+Üdvözöllek Kis Béla
+
+
+2. Feladat
+A program bekér egy számot a felhasználótól, és valamilyen matemataikai műveletek sorozataként generál és kiír a felhasználónak egy szerencseszámot!
+Tetszőleges művelet lehet, de legalább három féle legyen. (+-/* % //)
+
+Minta:
+
+Kérek egy számot: 12
+A szerencse számod:1213
+
+
+3. Feladat
+Hozz létre minden általad ismert váltózó típusból egyet és annak az típusát és az értékét írasd ki!
+
+Minta:
+
+Egész : 123
+..... : ...
+....
+
+4. A program  5 darab véletlenszámot generál [1;7] intervallumon, és ezeket eltárolja egy listában.
+Kérjen be a felhasználótól egy számot, és vizsgálja meg, hogy ez előfordul-e a listában!
+Az eredményről tájékoztassa a felhasználót, és írja ki a lista elemeit a képernyőre!
+
+Minta:
+
+Kérek egy egész számot 1 és 7 között:
+(vagy):
+A szám a listában volt.
+A szám nincs a listában.
+A lista: 2, 4, 1, 5, 7
+
+5. Készíts egy függvényt "addSzor" néven ami a bemenetként megadott két számot összadja és az eredmény kétszeresét adja vissza!
+A függvényt hívd is meg és eredményt irasd ki.
+
+Minta:
+
+Eredmény: 2,3 -> 10
