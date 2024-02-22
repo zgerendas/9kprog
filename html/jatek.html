@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Találd ki</title>
+    <script>
+        function igen(){
+            gondolt = Math.floor(Math.random()*100+1)
+            lepes = 1
+            kiir()
+        }
+        function kiir(){
+            document.getElementById("alap").innerHTML = 
+            gondolt+"<br>"+
+            "Kérem "+lepes+".  tipped: <input id='tipp' >"+
+            "<button onclick='tipp()'>OK</button>"
+        }
+        function tipp(){
+            lepes = lepes +1
+            tipped = document.getElementById("tipp").value
+            kiir()
+            if (tipped < gondolt ) {
+                document.getElementById("valasz").innerHTML= "Kicsi: "+tipped
+            }
+            if (tipped > gondolt ) {
+                document.getElementById("valasz").innerHTML= "Nagy"
+            }
+            if (tipped == gondolt ) {
+                document.getElementById("valasz").innerHTML= "Talált"
+            }
+        }
+        function nem(){
+            document.getElementById("alap").innerHTML =
+            "Nagyon sajnálom!"
+        }
+    </script>
+</head>
+<body>
+    <div id="alap">
+        <h1>Üdvözöllek!</h1>
+        <h2>Gondoltam egy számot 1 és 100 között.</h2>
+        Megprobálod kitalálni?
+        <button onclick="igen()">Igen</button> 
+        <button onclick="nem()">Nem</button>
+    </div>
+    <div id="valasz"></div>
+</body>
+</html>
+
+
+
+
