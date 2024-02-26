@@ -31,7 +31,7 @@ import random
 
 szamok = list()
 for i in range(5):
-    szamok.append(random.randint(1,8))
+    szamok.append(random.randint(1,7))
 
 tipp = int(input("Kérek egy egész számot 1 és 7 között: "))
 if tipp in szamok:
