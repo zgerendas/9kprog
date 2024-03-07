@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Üldözd</title>
+    <title>Egér követés</title>
     <script 
         src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
     </script>
-     <script>
+    <script>
         $(document).ready(function(){
+            $(this).on("click", function(e){
+                var x = e.pageX;
+                var y = e.pageY;
+                var kov = $("#kovet");
+                kov.css('position','absolute')
+                kov.css('left',x)
+                kov.css('top',y)
+            })          
             $(this).on("mousemove", function(e){
                 var x = e.pageX;
                 var y = e.pageY;
@@ -21,15 +29,13 @@
     </script>
 </head>
 <body>
-    <div id="mozog">
-        <img src="circle.png" width="50px">
+    <div id="kovet">Követő</div>
+    <div id="mozog"><img src="circle.png" width="50px">
     </div>
-
-    <div id="katt">Találat: 0</div>
-    <div id="kattint">Kattintás: 0</div>
-    <script src="jatek.js"></script>
+  
 </body>
 </html>
+
 
 
 
